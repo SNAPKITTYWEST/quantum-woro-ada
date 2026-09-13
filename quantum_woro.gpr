@@ -1,0 +1,13 @@
+project Quantum_WORO is
+
+   for Source_Dirs use ("src");
+   for Object_Dir  use "obj";
+   for Exec_Dir    use "bin";
+
+   for Main use ("woro_demo.adb");
+
+   package Compiler is
+      for Default_Switches ("Ada") use ("-gnat2012", "-O2", "-gnatwa");
+   end Compiler;
+
+end Quantum_WORO;
